@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\UkrPoshta_Test.props" />
+</Project>

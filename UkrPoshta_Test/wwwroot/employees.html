@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management - UkrPoshta</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Management</h1>
+        <!-- Navigation back to home page -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Search Employees -->
+        <section id="search-filters-section">
+            <h2>Search Employees</h2>
+            <input type="text" id="search-name" placeholder="Name">
+            <input type="text" id="search-department" placeholder="Department">
+            <input type="text" id="search-position" placeholder="Position">
+            <button id="search-button">Search</button>
+        </section>
+
+        <!-- Employee List -->
+        <section id="employee-list-section">
+            <h2>Employee List</h2>
+            <table id="employee-list">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                        <th>Salary</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Employee data will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Export Data Button -->
+        <button id="export-data-button">Export Employee Data</button>
+
+        <!-- Edit Employee Form (Hidden Initially) -->
+        <<div id="edit-form-container" style="display:none;">
+    <form id="edit-form">
+        <input type="hidden" id="edit-id">
+        <input type="text" id="edit-fullname" placeholder="Full Name">
+        <!-- Change select to input -->
+        <input type="text" id="edit-department" placeholder="Department">
+        <input type="text" id="edit-position" placeholder="Position">
+        <input type="number" id="edit-salary" placeholder="Salary">
+        <button type="button" id="save-employee-btn">Save</button>
+    </form>
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Company</p>
+    </footer>
+
+    <script src="/js/employees.js"></script>
+</body>
+</html>

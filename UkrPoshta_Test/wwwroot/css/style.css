@@ -1,0 +1,56 @@
+﻿/* Typography Enhancements */
+h1, h2, h3 {
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Table Header Styling */
+table thead {
+    background-color: #0077b6;
+    color: #fff;
+}
+
+/* Table Row Hover State */
+table tr:hover {
+    background-color: #e0f2f1;
+}
+
+/* Button and Form Focus State */
+button:focus, input:focus, select:focus {
+    outline: 2px solid #00b4d8;
+    outline-offset: 2px;
+}
+
+/* Section Padding */
+section {
+    padding: 1rem 0;
+}
+
+/* Box Shadows */
+button {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Transitions */
+button {
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}

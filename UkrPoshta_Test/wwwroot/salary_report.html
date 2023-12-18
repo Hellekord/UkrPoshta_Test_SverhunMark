@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Report - UkrPoshta</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Salary Report</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="employees.html">Employee Management</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="salary-report-section">
+            <h2>Generate Salary Report</h2>
+            <div>
+                <label for="department-input">Enter Department Name:</label>
+                <input type="text" id="department-input" placeholder="Type department name">
+            </div>
+            <div>
+                <button id="generate-report-button">Generate Report</button>
+            </div>
+            <div id="report-container">
+                <!-- Report results will be displayed here -->
+            </div>
+            <div>
+                <button id="export-report-button">Export Report as TXT</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 UkrPoshta</p>
+    </footer>
+
+    <script src="/js/salary_report.js"></script>
+</body>
+</html>
